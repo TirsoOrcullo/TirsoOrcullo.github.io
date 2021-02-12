@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;1,300;1,400&family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-family: "Roboto";
+}
+
+h1, h2 {
+    font-weight: 500;
+}
+
+h3, h4, h5 {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Helper */
+.hide-desktop {
+    display: none;
+}
+
+/* Home page */
+section.home {
+    width: 100%;
+    height: auto;
+}
+
+section.home .home-container {
+    background-image: url(../img/coverphoto.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+}
+
+section.home .nav-container {
+    background: rgba(0,0,0,0.7);
+    padding: 0 5%;
+    width: 100%;
+    height: 60px;
+
+    /* Grid */ 
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+    "box1 box2";
+}
+
+section.home .navbar-brand {
+    margin-left: 12px;
+    padding-top: 3%;
+    color: #fff;
+}
+
+section.home .menu-container {
+    padding-top: 1rem;
+    font-size: 1rem;
+    padding-left: 0;
+
+    /* Grid */
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-auto-columns: 130px;
+}
+
+section.home .menu-container a {
+    color: #fff;
+}
+
+/* home-content */
+section.home .home-content {
+    padding: 0 5%;
+
+    /* grid */
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: 
+    "box1 box2";
+}
+
+section.home .text-content h1 {
+    margin-top: 10rem;
+    padding: 2%;
+    align-items: center;
+    font-size: 4rem;
+    color: #fff;
+}
+
+section.home .text-content h3 {
+    color: #fff;
+    padding: 2%;
+    font-size: 1.5rem;
+}
+
+
+section.home .photo-content img {
+    padding: 0;
+    margin: 0;
+    width: 450px;
+    height: 625px;
+}
+
+/* Portfolio */
+section.portfolio {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(339deg, rgba(47, 47, 47,0.02) 0%, rgba(47, 47, 47,0.02) 42%,transparent 42%, transparent 99%,rgba(17, 17, 17,0.02) 99%, rgba(17, 17, 17,0.02) 100%),linear-gradient(257deg, rgba(65, 65, 65,0.02) 0%, rgba(65, 65, 65,0.02) 11%,transparent 11%, transparent 92%,rgba(53, 53, 53,0.02) 92%, rgba(53, 53, 53,0.02) 100%),linear-gradient(191deg, rgba(5, 5, 5,0.02) 0%, rgba(5, 5, 5,0.02) 1%,transparent 1%, transparent 45%,rgba(19, 19, 19,0.02) 45%, rgba(19, 19, 19,0.02) 100%),linear-gradient(29deg, rgba(28, 28, 28,0.02) 0%, rgba(28, 28, 28,0.02) 33%,transparent 33%, transparent 40%,rgba(220, 220, 220,0.02) 40%, rgba(220, 220, 220,0.02) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+}
+
+section.portfolio .text-content {
+    margin-top: 5rem;
+}
+
+section.portfolio .design {
+    color:	#989898;
+}
+
+/* Section skils */
+section.skills {
+    width: 100%;
+    height: auto;
+    background-image: repeating-radial-gradient(circle at center center, transparent 0px, transparent 13px,rgba(0,0,0,0.03) 13px, rgba(0,0,0,0.03) 24px,transparent 24px, transparent 62px,rgba(0,0,0,0.03) 62px, rgba(0,0,0,0.03) 96px),repeating-radial-gradient(circle at center center, rgb(255,255,255) 0px, rgb(255,255,255) 14px,rgb(255,255,255) 14px, rgb(255,255,255) 18px,rgb(255,255,255) 18px, rgb(255,255,255) 28px,rgb(255,255,255) 28px, rgb(255,255,255) 32px); background-size: 21px 21px;
+}
+
+section.skills h1,
+section.skills h5 {
+    text-align: center;
+}
+
+section.skills .soft-skills {
+    border-radius: 5%;
+    background: #fff;
+    box-shadow: 1px 1px 4px 1px #000;
+}
+
+section.skills .skill-list li {
+    padding: 2% 0;
+    list-style-type: circle;
+}
+
+section.skills .skills {
+    padding: 3%;
+}
+
+/* Job experience */
+section.job {
+    width: 100%;
+    height: auto;
+    background-image: repeating-linear-gradient(45deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(135deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(256,7%,84%),hsl(256,7%,84%));
+}
+
+section.job .job-container h1 {
+    line-height: 1;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+section.job .job-container {
+    padding: 3% 5%;
+}
+
+section.job .act-container li {
+    padding: 2%;
+    list-style-type: circle;
+}
+
+section.job .internship,
+section.job .experience {
+    padding: 2%;
+}
+
+section.job .internship {
+    background: #fff;
+    border-radius: 5%;
+    box-shadow: 1px 1px 3px 1px #000000;
+}
+
+section.footer {
+    width: 100%;
+    height: auto;
+    background: rgba(0,0,0,0.8);
+}
+
+section.footer .footer-container {
+    padding: 2% 5%;
+    color: #fff;
+}
+
+@media (max-width: 992px) and (min-width: 767px) {
+    /* Home */
+    section.home .text-content h1 {
+        font-size: 3.5rem;
+    }
+
+    section.home .text-content h3 {
+        font-size: 1.8rem;
+    }
+
+    section.home .menu-container {
+        /* Grid */
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        grid-auto-columns: 100px;
+    }
+
+    /* img */
+    section.home .photo-content img {
+        width: 420px;
+        height: 600px;
+    }
+
+    /* Porfolio */
+    section.portfolio .text-content {
+        margin-top: 2.5rem;
+    }
+
+    section.portfolio .portfolio-content h1 {
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    section.portfolio .portfolio-content p {
+        font-size: 0.9rem;
+    }
+
+    /* skills */
+    section.skills .skills {
+        padding: 2%;
+    }
+
+    section.skills .skill-list {
+        padding-left: 7%;
+    }
+
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+    /* Icon */
+    .hide-desktop {
+        display: block;
+    }
+
+    section.home .icon-container {
+        color: #fff;
+        font-size: 2rem;
+    
+        /* grid */
+        display: grid;
+        grid-column: 3/4;
+        place-items: center;
+        justify-items: end;
+    }
+
+    /* NavMenu */
+    section.home .nav-container {
+        position: fixed;
+    }
+
+    section.home .menu-container {
+        margin: 0;
+        padding: 0;
+        left: 0;
+        position: fixed;
+        height: auto;
+        width: 100%;
+        top: 60px;
+        background: rgba(0,0,0,0.8);
+
+        /* grid */
+        grid-auto-flow: row;
+        grid-auto-rows: 50px;
+        grid-auto-columns: 1fr;
+    }
+
+    section.home .menu-container li {
+        /* grid */
+        display: grid;
+        place-items: center;
+    }
+
+    /* Menu Animation */
+
+    section.home .menu-container.hide {
+        height: 0;
+    }
+    
+    section.home .menu-container.hide li {
+        display: none;
+    }
+
+    section.home .menu-container.show {
+        height: 200px;
+    }
+
+    section.header .icon-container i {
+        margin-right: 50px;
+        font-size: 30px;
+        color: #fff;
+    }
+
+    section.home .text-content h1 {
+        font-size: 2.8rem;
+    }
+
+    section.home .text-content h3 {
+        font-size: 1.3rem;
+    }
+
+    section.home .photo-content img {
+        margin-top: 4rem;
+        width: 350px;
+        height: 550px;
+    }
+
+    section.home .home-content {
+        padding-right: 0;
+    }
+
+    /* Porfolio */
+    section.portfolio .text-content {
+        margin-top: 2rem;
+    }
+
+    /* section.portfolio .portfolio-container {
+        border: 1px solid #000000;
+    } */
+
+    section.portfolio .text-content,
+    section.portfolio .photo-content img {
+        padding: 3%;
+    }
+
+    section.portfolio .portfolio-content h1 {
+        font-size: 1.8rem;
+        line-height: 1;
+    }
+
+    section.portfolio .portfolio-content p {
+        font-size: 0.9rem;
+    }
+
+    /* skills */
+    section.skills .skills {
+        padding: 3%;
+    }
+
+    section.skills .skill-list {
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 578px) {
+
+     /* Icon */
+     .hide-desktop {
+        display: block;
+    }
+
+    section.home .icon-container {
+        color: #fff;
+        font-size: 2rem;
+    
+        /* grid */
+        display: grid;
+        grid-column: 3/4;
+        place-items: center;
+        justify-items: end;
+    }
+
+    /* NavMenu */
+    section.home .nav-container {
+        position: fixed;
+    }
+
+    section.home .menu-container {
+        margin: 0;
+        padding: 0;
+        left: 0;
+        position: fixed;
+        height: auto;
+        width: 100%;
+        top: 60px;
+        background: rgba(0,0,0,0.8);
+
+        /* grid */
+        grid-auto-flow: row;
+        grid-auto-rows: 50px;
+        grid-auto-columns: 1fr;
+    }
+
+    section.home .menu-container li {
+        /* grid */
+        display: grid;
+        place-items: center;
+    }
+
+    /* Menu Animation */
+
+    section.home .menu-container.hide {
+        height: 0;
+    }
+    
+    section.home .menu-container.hide li {
+        display: none;
+    }
+
+    section.home .menu-container.show {
+        height: 200px;
+    }
+
+    section.header .icon-container i {
+        margin-right: 50px;
+        font-size: 30px;
+        color: #fff;
+    }
+
+    section.home .text-content h1 {
+        font-size: 2.8rem;
+    }
+
+    section.home .text-content h3 {
+        font-size: 1.3rem;
+    }
+
+    section.home .photo-content img {
+        margin-top: 4rem;
+        width: 350px;
+        height: 550px;
+    }
+
+    section.home .home-content {
+        padding-right: 0;
+    }
+
+    /* Porfolio */
+    section.portfolio .text-content {
+        margin-top: 0.8rem;
+    }
+
+    section.portfolio .text-content,
+    section.portfolio .photo-content img {
+        padding: 3%;
+    }
+
+    section.portfolio .portfolio-content h1 {
+        font-size: 1.8rem;
+        line-height: 1;
+    }
+
+    section.portfolio .portfolio-content p {
+        font-size: 0.9rem;
+    }
+
+    /* skills */
+    section.skills .skills {
+        padding: 3%;
+    }
+
+    section.skills .skill-list {
+        padding-left: 5%;
+    }
+
+}
