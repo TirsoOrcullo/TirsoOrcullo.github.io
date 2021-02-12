@@ -97,6 +97,10 @@ section.home .menu-container a {
     color: #fff;
 }
 
+section.home .menu-container a:hover {
+    font-size: 1.1rem;
+}
+
 /* home-content */
 section.home .home-content {
     padding: 0 5%;
@@ -159,6 +163,7 @@ section.skills h5 {
 }
 
 section.skills .soft-skills {
+    padding: 2%;
     border-radius: 5%;
     background: #fff;
     box-shadow: 1px 1px 4px 1px #000;
