@@ -451,18 +451,28 @@ section.footer .footer-container {
         color: #fff;
     }
 
+
+    /* Home */
+    section.home .home-content {
+        padding: 0 2%;
+    }
+
     section.home .text-content h1 {
-        font-size: 2.8rem;
+        font-size: 1.9rem;
     }
 
     section.home .text-content h3 {
-        font-size: 1.3rem;
+        font-size: 1rem;
+    }
+
+    section.home .photo-content {
+        width: 100%;
     }
 
     section.home .photo-content img {
         margin-top: 4rem;
-        width: 350px;
-        height: 550px;
+        width: 250px;
+        height: 450px;
     }
 
     section.home .home-content {
