@@ -205,39 +205,7 @@ section.skills .skills {
     padding: 3%;
 }
 
-/* Job experience */
-section.job {
-    width: 100%;
-    height: auto;
-    background-image: repeating-linear-gradient(45deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(135deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(256,7%,84%),hsl(256,7%,84%));
-}
-
-section.job .job-container h1 {
-    line-height: 1;
-    text-align: center;
-    padding-bottom: 1rem;
-}
-
-section.job .job-container {
-    padding: 3% 5%;
-}
-
-section.job .act-container li {
-    padding: 2%;
-    list-style-type: circle;
-}
-
-section.job .internship,
-section.job .experience {
-    padding: 2%;
-}
-
-section.job .internship {
-    background: #fff;
-    border-radius: 5%;
-    box-shadow: 1px 1px 3px 1px #000000;
-}
-
+/* Footer */
 section.footer {
     width: 100%;
     height: auto;
