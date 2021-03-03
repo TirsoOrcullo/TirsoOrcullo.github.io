@@ -150,8 +150,10 @@ section.portfolio .text-content {
     margin-top: 4rem;
 }
 
+/* Gitbut */
 .githubBut {
     width: 120px;
+    margin: 10px;
     padding: 0;
     height: 50px;
     border: 1px solid black;
@@ -173,6 +175,7 @@ section.portfolio .text-content {
     color: white;
     background: black;
 }
+
 
 section.portfolio .design {
     color:	#989898;
