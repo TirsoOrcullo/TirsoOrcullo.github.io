@@ -1,3 +1,4 @@
+
 const iconMenu = document.querySelector('#iconMenu')
 const icon = document.querySelector('#icon')
 const menuContainer = document.querySelector('.menu-container')
@@ -18,4 +19,4 @@ iconMenu.addEventListener('click', () => {
         menuContainer.classList.remove('show')
         menuContainer.classList.add('hide')
     }
-})
+});
