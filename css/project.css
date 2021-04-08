@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.project.page {
+    width: 100%;    
+}
+
+.project-title {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2A5058;
+    color: white;
+}
+
+.project-title h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-shadow: 0px 3px 12px #fff;
+
+}
+
+.pages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    background: #2A5058;
+}
+
+.pages a {
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    font-weight: 200;
+}
+
+.page-home {
+    display: grid;
+    grid-column: 1/2;
+    justify-content: start;
+}
+
+.page-skill {
+    display: grid;
+    grid-column: 2/3;
+    justify-content: end;
+}
+
+.project-content {
+    display: flex;
+}
+
+.project-img {
+    width: 50%;
+    height: 50vh;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.project-info {
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.project-info h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #2A5058;
+}
+
+.info {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info p {
+    width: 150px;
+    background: #2A5058;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.feature {
+    width: 100%;
+    height: 10vh;
+}
+
+.feature h3 {
+    margin-left: 5%;
+    font-weight: 400;
+}
+
+.feature-info {
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: #2A5058;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gitbut,
+.navbut {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid #2A5058;
+    color: #2A5058;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    margin: 0 10px;
+}
+
+.buttons a:hover {
+    color: white;
+    background: #2A5058;
+}
+
+footer {
+    height: 20vh;
+    background: #2A5058;
+    color: white;
+    /* grid */
+    display: grid;
+    grid-auto-columns: 5% 1fr 1fr 5%;
+}
+
+.social-media {
+    display: grid;
+    grid-column: 2/3;
+    align-self: center;
+}
+
+.social-media i {
+    margin: 0 5px;
+}
+
+.portfolio-page {
+    display: grid;
+    grid-column: 3/4;
+    align-self: center;
+}
+
+.project-selection {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-page a {
+    text-decoration: none;
+    color: #fff;
+    width: 10%;
+}
+
+@media (max-width: 992px) and (min-width: 767px) {
+    .project-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .gitbut,
+    .navbut {
+        width: 110px;
+        height: 40px;
+    }
+
+    .feature h3 {
+        font-size: 1rem;
+    }
+
+    .info p {
+        width: 110px;
+    }
+
+    .feature p {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 768px) and (min-width: 577px) {
+    .project-title h1 {
+        font-size: 2.3rem;
+    }
+
+    .project-info h1 {
+        font-size: 2rem;
+    }
+
+    .info p {
+        width: 110px;
+    }
+
+    .feature p {
+        font-size: 1rem;
+    }
+
+    .project-content {
+        flex-direction: column;
+        border: 1px solid #000000;
+    }
+
+    .project-img {
+        width: 100%;
+    }
+
+    .project-img img {
+        object-fit: cover;
+    }
+
+    .project-info {
+        width: 90%;
+        margin: auto;
+    }
+
+    .gitbut,
+    .navbut {
+        width: 120px;
+        height: 40px;
+    }
+
+    footer {
+        /* Grid */
+        display: grid;
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: 1fr 1fr;
+        align-self: center;   
+        font-size: 0.8rem; 
+    }
+
+    .social-media i {
+        margin: 0 0 5px 0;
+    }
+
+    .portfolio-page {
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 2/3;  
+    }
+}
+
+@media (max-width: 578px) {
+
+    .project-title h1 {
+        font-size: 2rem;
+    }
+
+    .pages a {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    .project-info h1 {
+        font-size: 2rem;
+    }
+
+    .info p {
+        font-size: 0.8rem;
+        width: 90px;
+    }
+
+    .feature h3 {
+        font-size: 1.1rem;
+    }
+
+    .feature p {
+        font-size: 0.8rem;
+    }
+
+    .project-content {
+        flex-direction: column;
+        border: 1px solid #000000;
+    }
+
+    .project-img {
+        width: 100%;
+    }
+
+    .project-img img {
+        object-fit: fill;
+    }
+
+    .project-info {
+        width: 90%;
+        margin: auto;
+    }
+
+    .gitbut,
+    .navbut {
+        width: 110px;
+        height: 40px;
+    }
+
+    footer {
+        /* Grid */
+        display: grid;
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: 1fr 1fr;
+        align-self: center;   
+        font-size: 0.8rem; 
+    }
+
+    .social-media i {
+        margin: 0 5px 0 0;
+    }
+
+    .portfolio-page {
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 2/3;  
+    }
+}
+

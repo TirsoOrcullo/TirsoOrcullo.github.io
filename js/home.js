@@ -1,22 +1,15 @@
+function contact() {
+    const contactModal = document.querySelector(".contact-modal");
+    const contact = document.querySelector("#contact");
+    const closeContact = document.querySelector(".close-contact");
 
-const iconMenu = document.querySelector('#iconMenu')
-const icon = document.querySelector('#icon')
-const menuContainer = document.querySelector('.menu-container')
+    contact.addEventListener("click", function(){
+        contactModal.classList.add("active-contact");
 
-iconMenu.addEventListener('click', () => {
-    if (icon.classList.contains('fa-bars')) {
-        //icon
-        icon.classList.remove('fa-bars')
-        icon.classList.add('fa-close')
-        //menu
-        menuContainer.classList.add('show')
-        menuContainer.classList.remove('hide')
-    } else {
-        //icon
-        icon.classList.add('fa-bars')
-        icon.classList.remove('fa-close')
-        //menu
-        menuContainer.classList.remove('show')
-        menuContainer.classList.add('hide')
-    }
-});
+    });
+    closeContact.addEventListener("click", function(){
+        contactModal.classList.remove("active-contact");
+    });
+}
+
+contact();
